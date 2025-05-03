@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKeepWhatYouKill", "YKWYK\YouKeepWhatYouKill.csproj", "{B3312B75-2AEA-2D6B-C616-335D2B644B16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Beta_Debug|Any CPU = Beta_Debug|Any CPU
+		Beta_Debug|x64 = Beta_Debug|x64
+		Beta_Release|Any CPU = Beta_Release|Any CPU
+		Beta_Release|x64 = Beta_Release|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Stable_Debug|Any CPU = Stable_Debug|Any CPU
+		Stable_Debug|x64 = Stable_Debug|x64
+		Stable_Release|Any CPU = Stable_Release|Any CPU
+		Stable_Release|x64 = Stable_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Debug|Any CPU.ActiveCfg = Beta_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Debug|Any CPU.Build.0 = Beta_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Debug|x64.ActiveCfg = Beta_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Debug|x64.Build.0 = Beta_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Release|Any CPU.ActiveCfg = Beta_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Release|Any CPU.Build.0 = Beta_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Release|x64.ActiveCfg = Beta_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Beta_Release|x64.Build.0 = Beta_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Debug|Any CPU.Build.0 = Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Debug|x64.ActiveCfg = Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Debug|x64.Build.0 = Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Release|Any CPU.ActiveCfg = Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Release|Any CPU.Build.0 = Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Release|x64.ActiveCfg = Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Release|x64.Build.0 = Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Debug|Any CPU.ActiveCfg = Stable_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Debug|Any CPU.Build.0 = Stable_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Debug|x64.ActiveCfg = Stable_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Debug|x64.Build.0 = Stable_Debug|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Release|Any CPU.ActiveCfg = Stable_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Release|Any CPU.Build.0 = Stable_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Release|x64.ActiveCfg = Stable_Release|x64
+		{B3312B75-2AEA-2D6B-C616-335D2B644B16}.Stable_Release|x64.Build.0 = Stable_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

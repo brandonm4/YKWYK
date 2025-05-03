@@ -1,0 +1,78 @@
+﻿<Project Sdk="Bannerlord.BUTRModule.Sdk/1.1.0.124">
+
+  <PropertyGroup>
+    <Version>1.2.8.5</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>x64</Platforms>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ModuleId>YouKeepWhatYouKill</ModuleId>
+    <ModuleName>$(ModuleId)</ModuleName>
+    <DisplayName>You Keep What You Kill</DisplayName>
+    <RootNamespace>$(ModuleName)</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>brandonm</Authors>
+    <Product>You Keep What You Kill</Product>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <Copyright>Copyright © 2020-2022 brandonm</Copyright>
+    <Description>Claim battlefield loot</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>$(ModuleName).$(GameVersion)</AssemblyName>
+    <Configurations>Stable_Debug;Stable_Release;Beta_Debug;Beta_Release;Debug;Release</Configurations>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GameVersionFlat>$([System.String]::Copy('$(GameVersion)').Replace('.',''))</GameVersionFlat>
+    <GameVersionConstant>e$(GameVersionFlat)</GameVersionConstant>
+    <DefineConstants>$(DefineConstants);$(GameVersionConstant)</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <BaseOutputPath>bin\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Lib.Harmony" Version="2.3.6" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Bannerlord.BuildResources" Version="1.1.0.124">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="$(GameVersion).*-*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.StoryMode" Version="$(GameVersion).*-*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.SandBox" Version="$(GameVersion).*-*" PrivateAssets="All" />
+    <PackageReference Include="Bannerlord.ReferenceAssemblies.CustomBattle" Version="$(GameVersion).*-*" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SubModuleOverrides Include="DisplayName">
+      <Regex>\$displayname\$</Regex>
+      <Replacement>$(DisplayName)</Replacement>
+    </SubModuleOverrides>
+    <SubModuleOverrides Include="MCMVersion">
+      <Regex>\$mcmversion\$</Regex>
+      <Replacement>$(MCMVersion)</Replacement>
+    </SubModuleOverrides>
+    <SubModuleOverrides Include="Version">
+      <Regex>\$txpversion\$</Regex>
+      <Replacement>$(Version)</Replacement>
+    </SubModuleOverrides>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Patch\" />
+  </ItemGroup>
+
+  
+
+
+</Project>
